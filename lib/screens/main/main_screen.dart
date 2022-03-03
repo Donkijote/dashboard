@@ -1,3 +1,4 @@
+import 'package:dashboard/screens/dashboard/dashboard_screen.dart';
 import 'package:dashboard/screens/main/components/side_menu.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -27,7 +28,7 @@ class MainScreen extends StatelessWidget {
             const Expanded(
               // It takes 5/6 part of the screen
               flex: 5,
-              child: Text("Dashboard Screen"),
+              child: DashboardScreen(),
             ),
           ],
         ),
