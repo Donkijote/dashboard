@@ -1,3 +1,4 @@
+import 'package:dashboard/screens/main/components/side_menu.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -11,7 +12,7 @@ class MainScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       key: context.read<MenuController>().scaffoldKey,
-      drawer: const Text("Side menu"),
+      drawer: const SideMenu(),
       body: SafeArea(
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -21,7 +22,7 @@ class MainScreen extends StatelessWidget {
               const Expanded(
                 // default flex = 1
                 // and it takes 1/6 part of the screen
-                child: Text("Side menu"),
+                child: SideMenu(),
               ),
             const Expanded(
               // It takes 5/6 part of the screen
