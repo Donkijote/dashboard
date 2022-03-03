@@ -1,5 +1,6 @@
 import 'package:dashboard/screens/dashboard/components/header.dart';
 import 'package:dashboard/screens/dashboard/components/my_files.dart';
+import 'package:dashboard/screens/dashboard/components/recent_files.dart';
 import 'package:dashboard/screens/dashboard/components/storage_details.dart';
 import 'package:flutter/material.dart';
 
@@ -27,7 +28,7 @@ class DashboardScreen extends StatelessWidget {
                     children: [
                       const MyFiles(),
                       const SizedBox(height: defaultPadding),
-                      const Text("Recent files"),
+                      const RecentFiles(),
                       if (Responsive.isMobile(context))
                         const SizedBox(height: defaultPadding),
                       if (Responsive.isMobile(context)) const StorageDetails(),
