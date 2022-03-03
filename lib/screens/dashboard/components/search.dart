@@ -1,7 +1,6 @@
+import 'package:dashboard/constants/global.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-
-import '../../../constants/global.dart';
 
 class SearchField extends StatelessWidget {
   const SearchField({

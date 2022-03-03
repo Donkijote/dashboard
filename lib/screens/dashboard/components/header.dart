@@ -1,8 +1,8 @@
+import 'package:dashboard/controllers/menu_controller.dart';
+import 'package:dashboard/utils/responsive.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../../controllers/menu_controller.dart';
-import '../../../utils/responsive.dart';
 import 'profile.dart';
 import 'search.dart';
 

@@ -1,7 +1,6 @@
+import 'package:dashboard/constants/global.dart';
+import 'package:dashboard/utils/responsive.dart';
 import 'package:flutter/material.dart';
-
-import '../../../constants/global.dart';
-import '../../../utils/responsive.dart';
 
 class ProfileCard extends StatelessWidget {
   const ProfileCard({
