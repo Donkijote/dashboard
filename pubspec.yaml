@@ -40,6 +40,11 @@ dependencies:
   fl_chart: ^0.36.1
   provider: ^5.0.0
   data_table_2: ^2.0.3
+  firebase_core: ^1.22.0
+  flutter_dotenv: ^5.0.2
+  firebase_auth: ^3.9.0
+  font_awesome_flutter: ^10.2.1
+  google_sign_in: ^5.4.1
 
 dev_dependencies:
   flutter_test:
@@ -67,6 +72,7 @@ flutter:
   assets:
   - assets/images/
   - assets/icons/
+  - .env
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

@@ -1,5 +1,7 @@
+import 'package:dashboard/controllers/user_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:provider/provider.dart';
 
 class SideMenu extends StatelessWidget {
   const SideMenu({
@@ -8,6 +10,8 @@ class SideMenu extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    UserController userController =
+        Provider.of<UserController>(context, listen: false);
     return Drawer(
       child: ListView(
         children: [
@@ -53,6 +57,14 @@ class SideMenu extends StatelessWidget {
             title: "Settings",
             svgSrc: "assets/icons/menu_setting.svg",
             press: () {},
+          ),
+          DrawerListTile(
+            title: "Logout",
+            svgSrc: "assets/icons/menu_setting.svg",
+            press: () {
+              Navigator.pop(context);
+              userController.logout();
+            },
           ),
         ],
       ),
